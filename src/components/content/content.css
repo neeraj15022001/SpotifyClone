@@ -1,0 +1,16 @@
+.content {
+  background-color: var(--themeGrey);
+  width: 65vw;
+  height: 100vh;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .content {
+    width: 75vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content {
+    width: 80vw;
+  }
+}

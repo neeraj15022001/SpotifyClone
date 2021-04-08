@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.navbar__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5.5rem;
+}
+.navbar__button__design {
+    background-color: var(--themeBlack);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    text-align: center;
+}
+.navbar__button__icon {
+    color: var(--themeWhite);
+    padding-left: 0.3rem !important;
+    font-size: 1.5rem !important;
+}
