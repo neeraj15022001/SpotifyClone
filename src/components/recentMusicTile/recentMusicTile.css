@@ -29,17 +29,17 @@
     transition: 0.2s ease-in-out;
 }
 .recentMusicTile__name__container:hover {
-    filter: brightness(200%);
-    -webkit-filter: brightness(200%);
+    filter: brightness(140%);
+    -webkit-filter: brightness(140%);
 }
 .recentMusicTile__name__container:hover .recentMusicTile__icon {
-    display: inline-block !important;
+    visibility: visible !important;
 }
 .recentMusicTile__name {
     margin-left: 1rem;
 }
 .recentMusicTile__icon {
-    display: none !important;
+    visibility: hidden !important;
     width: 2.5rem !important;
     height: 2.5rem !important;
     fill: var(--themeGreen) !important;

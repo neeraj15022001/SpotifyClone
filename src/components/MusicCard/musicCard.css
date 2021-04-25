@@ -1,0 +1,49 @@
+.musicCard {
+  margin: 0 0.8rem;
+}
+.musicCardArea {
+  width: 15.5rem !important;
+}
+
+.musicCard:first-child {
+  margin-left: 0 !important;
+}
+.musicCardCard {
+  width: 15.5rem;
+  padding: 0.8rem;
+  background-color: var(--themeGrey) !important;
+  color: var(--themeWhite) !important;
+}
+.musicCard__Image__Container {
+  position: relative;
+}
+.musicCardImage {
+  height: 12rem;
+}
+.musicCardContent {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+}
+.musicCardSubtitle {
+  color: var(--themeSubtitleColor);
+}
+
+.musicCard__icon {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  visibility: hidden !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  fill: var(--themeGreen) !important;
+  transition: 0.3s ease-in-out !important;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+}
+.musicCard__icon:hover {
+    transform: scale(1.1);
+}
+.musicCardArea:hover .musicCard__icon {
+  visibility: visible !important;
+}

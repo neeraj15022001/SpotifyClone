@@ -1,0 +1,11 @@
+
+.contentPadding {
+    padding: 1.5rem;
+    color: var(--themeWhite);
+}
+.contentPadding > h1 {
+    font-weight: 500;
+}
+.contentMargin {
+    margin-top: 1rem;
+}

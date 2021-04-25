@@ -1,0 +1,5 @@
+.musicList__Card__Container {
+    display: flex;
+    overflow: scroll;
+    align-items: center;
+}

@@ -1,8 +1,8 @@
 .content {
-  background-color: var(--themeGrey);
+  background-color: var(--themeBackground);
   width: 65vw;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 @media screen and (min-width: 768px) {
   .content {
@@ -14,3 +14,4 @@
     width: 80vw;
   }
 }
+

@@ -1,9 +1,4 @@
-.recentMusic {
-    padding: 1rem;
-    color: var(--themeWhite);
-}
 .recentMusic__tile__container {
-    margin-top: 1rem;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 1rem;
