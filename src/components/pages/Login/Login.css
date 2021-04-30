@@ -1,0 +1,25 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--themeBlack);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login__image {
+    width: 30rem;
+    margin-bottom: 4rem;
+}
+.login__button {
+    background-color: var(--themeGreen);
+    border: none;
+    color: var(--themeWhite);
+    padding: 1rem 8rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+.login__button:hover {
+    background-color: var(--themeDarkGreen);
+}

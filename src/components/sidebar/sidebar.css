@@ -13,6 +13,7 @@
 }
 .sidebar__pages {
     color: var(--themeWhite);
+    width: 100%;
 }
 .sidebar__pages__list {
     list-style: none;
@@ -22,7 +23,7 @@
     padding: 0.7rem 1rem;
     display: flex;
     align-items: center;;
-    border-radius: 2rem;
+    border-radius: 0.2rem;
 }
 .sidebar__pages__list > li:hover {
     background-color: var(--themeGrey);
@@ -32,6 +33,7 @@
 }
 .sidebar__userPlaylist {
     color: var(--themeWhite);
+    width: 100%;
 }
 .sidebar__userPlaylist__list {
     margin-top: 2rem;
@@ -41,7 +43,7 @@
     padding: 0.7rem 1rem;
     display: flex;
     align-items: center;;
-    border-radius: 2rem;
+    border-radius: 0.2rem;
     cursor: pointer;
 }
 .sidebar__userPlaylist__list > li:hover {

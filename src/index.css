@@ -5,12 +5,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  user-select: none;
 }
 :root {
   --themeBlack : #000000;
   --themeSecondaryBlack : #101010;
   --themeGrey : #1D1D1D;
   --themeGreen : #64D762;
+  --themeDarkGreen : #50b04e;
   --themeBlue : #2E77D0;
   --themeWhite : #ffffff;
   --themeLightGrey : #404A4C;

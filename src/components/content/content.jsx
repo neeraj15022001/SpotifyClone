@@ -1,5 +1,6 @@
+
 import React from 'react';
-import "./content.css";
+import "./Content.css";
 import Navbar from "../navbar/Navbar.jsx";
 import RecentMusic from "../recentMusic/RecentMusic.jsx";
 import MusicList from "../MusicList/MusicList.jsx";
