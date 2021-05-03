@@ -7,29 +7,29 @@ import Typography from "@material-ui/core/Typography";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import PlayCircleFilledWhiteIcon from "@material-ui/icons/PlayCircleFilledWhite";
 
-function MusicCard() {
+function MusicCard({image, albumName, artistName}) {
   return (
     <div className="musicCard">
       <CardActionArea className="musicCardArea">
         <Card className="musicCardCard">
           <div className="musicCard__Image__Container">
             <CardMedia
-              title="Gajendra Verma"
-              image="https://yt3.ggpht.com/ytc/AAUvwniFfCvnBi-IHQWsW821nUce0u2T6Fc3hPXRjivN=s900-c-k-c0x00ffffff-no-rj"
+              title={artistName}
+              image={image}
               className="musicCardImage"
             />
             <PlayCircleFilledWhiteIcon className="musicCard__icon" />
           </div>
           <CardContent className="musicCardContent">
             <Typography gutterBottom variant="h5" component="h2">
-              Song Name
+              {albumName}
             </Typography>
             <Typography
               variant="body2"
               component="p"
               className="musicCardSubtitle"
             >
-              Artist Name
+              {artistName}
             </Typography>
           </CardContent>
         </Card>
