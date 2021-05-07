@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import PlayCircleFilledWhiteIcon from "@material-ui/icons/PlayCircleFilledWhite";
 
-function MusicCard({image, albumName, artistName}) {
+function MusicCard({ image, name, artistName }) {
   return (
     <div className="musicCard">
       <CardActionArea className="musicCardArea">
@@ -22,7 +22,7 @@ function MusicCard({image, albumName, artistName}) {
           </div>
           <CardContent className="musicCardContent">
             <Typography gutterBottom variant="h5" component="h2">
-              {albumName}
+              {name}
             </Typography>
             <Typography
               variant="body2"

@@ -3,7 +3,6 @@ import "./recentMusicTile.css";
 import PlayCircleFilledWhiteIcon from "@material-ui/icons/PlayCircleFilledWhite";
 
 function RecentMusicTile({songName,image}) {
-  console.log(image)
   return (
     <div className="recentMusicTile">
       <div className="recentMusicTile__image" style={{background:`url(${image})`}}></div>
