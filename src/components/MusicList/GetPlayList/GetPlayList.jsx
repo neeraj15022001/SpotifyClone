@@ -2,18 +2,14 @@ import React, { useEffect, useState } from "react";
 import "../musicList.css";
 import "../../CommonCSS/style.css";
 import MusicCard from "../../MusicCard/MusicCard.jsx";
-import {accessToken} from "../../accessToken.js"
-import {playlist} from "../../endpoints.js"
-import {playlistHeading} from "../../title.js"
+import { accessToken } from "../../accessToken.js";
+import { reduceStringSize } from "../../commonFunctions";
 
-function ArtistList() {
+function ArtistList({ title, url }) {
   const [data, setData] = useState([]);
   useEffect(() => {
     var myHeaders = new Headers();
-    myHeaders.append(
-      "Authorization",
-      accessToken
-    );
+    myHeaders.append("Authorization", accessToken);
 
     var requestOptions = {
       method: "GET",
@@ -21,19 +17,28 @@ function ArtistList() {
       redirect: "follow",
     };
 
-    fetch(playlist, requestOptions)
+    fetch(url, requestOptions)
       .then((response) => response.json())
-      .then((result) => setData(result.items))
+      .then((result) => {
+        setData(result.tracks.items);
+      })
       .catch((error) => console.log("error", error));
   }, []);
+
   return (
     <div className="musicList contentPadding">
-      <h1>{playlistHeading}</h1>
+      <h1>{title}</h1>
       <div className="musicList__Card__Container contentMargin">
-        {data.map((item) =>
-        //   console.log(item)
-            <MusicCard key={item.id} image={item.images[0].url} name={item.name} artistName={item.owner.displayName} />
-        )}
+        {data.map((item) => (
+          <MusicCard
+            key={item.track.id}
+            image={item.track.album.images[0].url}
+            name={reduceStringSize({
+              name: item.track.name.toLowerCase(),
+            })}
+            artistName={item.track.artists[0].name}
+          />
+        ))}
       </div>
     </div>
   );

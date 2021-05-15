@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./recentMusic.css";
 import "../CommonCSS/style.css";
-import RecentMusicTile from "../recentMusicTile/RecentMusicTile.jsx";
+import RecentMusicTile from "../RecentMusicTile/RecentMusicTile.jsx";
 import {accessToken} from "../accessToken.js";
 import {recentMusic} from "../endpoints.js";
 import {recentMusicHeading} from "../title.js"

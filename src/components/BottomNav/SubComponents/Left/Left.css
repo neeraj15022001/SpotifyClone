@@ -7,7 +7,6 @@
 .left__image {
     width: 4rem;
     height: 4rem;
-    background-color: red;
 }
 .left__text {
     display: flex;
