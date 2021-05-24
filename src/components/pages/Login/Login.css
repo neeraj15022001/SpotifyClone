@@ -12,7 +12,7 @@
     margin-bottom: 4rem;
 }
 .login__button {
-    background-color: var(--themeGreen);
+    background-color: var(--themeGreen) !important;
     border: none;
     color: var(--themeWhite);
     padding: 1rem 8rem;
@@ -21,5 +21,5 @@
     transition: 0.3s ease-in-out;
 }
 .login__button:hover {
-    background-color: var(--themeDarkGreen);
+    background-color: var(--themeDarkGreen) !important;
 }
