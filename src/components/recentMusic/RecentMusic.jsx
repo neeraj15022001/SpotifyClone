@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./recentMusic.css";
+import "./RecentMusic.css";
 import "../CommonCSS/style.css";
 import RecentMusicTile from "../RecentMusicTile/RecentMusicTile.jsx";
 import {accessToken} from "../accessToken.js";

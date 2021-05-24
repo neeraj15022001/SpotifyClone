@@ -1,5 +1,5 @@
 import React from "react";
-import "./recentMusicTile.css";
+import "./RecentMusicTile.css";
 import PlayCircleFilledWhiteIcon from "@material-ui/icons/PlayCircleFilledWhite";
 
 function RecentMusicTile({songName,image}) {

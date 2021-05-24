@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../musicList.css";
+import "../MusicList.css";
 import "../../CommonCSS/style.css";
 import MusicCard from "../../MusicCard/MusicCard.jsx";
 import {accessToken} from "../../accessToken.js"
