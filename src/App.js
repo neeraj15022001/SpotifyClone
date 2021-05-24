@@ -3,7 +3,7 @@ import "./App.css";
 import Sidebar from "./components/Sidebar/Sidebar.jsx";
 import Content from "./components/Content/Content";
 import BottomNav from "./components/BottomNav/BottomNav.jsx";
-import Login from "./components/pages/Login/Login";
+import Login from "./components/Pages/Login/Login";
 import { SpotifyApiContext } from "react-spotify-api";
 import Cookies from "js-cookie";
 // import "react-spotify-auth/dist/index.css";
