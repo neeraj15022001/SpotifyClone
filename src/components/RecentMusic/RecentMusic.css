@@ -1,0 +1,14 @@
+.recentMusic__tile__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+@media screen and (min-width : 1200px) {
+    .recentMusic__tile__container {
+        grid-template-columns: auto auto auto;
+    }
+    .recentMusic {
+        padding: 2rem;
+    }
+}

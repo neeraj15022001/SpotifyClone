@@ -1,0 +1,45 @@
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+}
+.left__image {
+    width: 4rem;
+    height: 4rem;
+}
+.left__text {
+    display: flex;
+    flex-direction: column;
+}
+.left__text > a:nth-child(1) {
+    text-decoration: none;
+    color: var(--themeWhite);
+}
+.left__text > a:nth-child(2) {
+    text-decoration: none;
+    color: var(--themeSubtitleColor);
+}
+.left__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 3.5rem;
+}
+.left__icons__icon {
+    cursor: pointer;
+}
+@keyframes popUp {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    50% {
+        transform: scale(1.2);
+        filter: brightness(150%);
+    }
+    100% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+}

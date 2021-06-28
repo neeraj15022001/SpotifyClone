@@ -1,0 +1,68 @@
+.sidebar {
+    width: 35vw;
+    background-color: var(--themeBlack);
+    height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.sidebar__bannerImage {
+    width: 8rem;
+    padding-left: 0.7rem;
+}
+.sidebar__pages {
+    color: var(--themeWhite);
+    width: 100%;
+}
+.sidebar__pages__list {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+.sidebar__pages__list > li {
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: center;;
+    border-radius: 0.2rem;
+}
+.sidebar__pages__list > li:hover {
+    background-color: var(--themeGrey);
+}
+.sidebar__pages__list__icon {
+    margin-right: 0.4rem;
+}
+.sidebar__userPlaylist {
+    color: var(--themeWhite);
+    width: 100%;
+}
+.sidebar__userPlaylist__list {
+    margin-top: 2rem;
+    list-style: none;
+}
+.sidebar__userPlaylist__list > li {
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: center;;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.sidebar__userPlaylist__list > li:hover {
+    background-color: var(--themeGrey);
+    cursor: pointer;
+}
+.sidebar__divider {
+    margin: 1.5rem 0;
+    width: 100%;
+    background-color: var(--themeWhite);
+    opacity: 0.3;
+}
+@media screen and (min-width : 768px) {
+    .sidebar {
+        width: 25vw;
+    }
+}
+@media screen and (min-width : 1200px) {
+    .sidebar {
+        width: 20vw;
+    }
+}
